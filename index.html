@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robust Business Investments | Strategic Holding & Advisory</title>
+    <meta name="description" content="Robust Business Investments — A strategic holding company building resilient ventures in technology, cybersecurity, and digital innovation.">
+    <meta name="author" content="Robust Business Investments">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Robust Business Investments | Strategic Holding & Advisory">
+    <meta property="og:description" content="Building resilient ventures in technology, cybersecurity, and digital innovation. Parent company of RB Technical Solutions, KinKonnect, and more.">
+    <meta property="og:url" content="https://rbinvestments.us">
+    <meta property="og:site_name" content="Robust Business Investments">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Robust Business Investments | Strategic Holding & Advisory">
+    <meta name="twitter:description" content="Building resilient ventures in technology, cybersecurity, and digital innovation.">
+
+    <link rel="canonical" href="https://rbinvestments.us">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rbi: {
+                            navy: '#1b2a5e',
+                            'navy-light': '#243572',
+                            'navy-dark': '#121d40',
+                            red: '#c63a2b',
+                            'red-light': '#d94f40',
+                            'red-dark': '#a82f22',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap');
+
+        *, *::before, *::after { box-sizing: border-box; }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            scroll-behavior: smooth;
+            background: #ffffff;
+            color: #1e293b;
+        }
+
+        .heading-font {
+            font-family: 'DM Serif Display', serif;
+        }
+
+        /* Nav */
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(27, 42, 94, 0.06);
+        }
+        .glass-nav.scrolled {
+            box-shadow: 0 1px 24px rgba(27, 42, 94, 0.06);
+        }
+
+        /* Gradient accent inspired by business card */
+        .gradient-text {
+            background: linear-gradient(135deg, #c63a2b, #d94f40);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-bar {
+            background: linear-gradient(90deg, #1b2a5e, #c63a2b);
+        }
+
+        /* Hero subtle grid */
+        .hero-grid {
+            background-image:
+                linear-gradient(rgba(27,42,94,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(27,42,94,0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+        }
+
+        /* Brand card */
+        .brand-card {
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .brand-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 24px 48px -12px rgba(27, 42, 94, 0.12);
+        }
+
+        /* Service card */
+        .service-card {
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .service-card:hover {
+            transform: translateY(-4px);
+            border-color: #1b2a5e;
+        }
+
+        /* Sections */
+        section { padding: 120px 20px; }
+
+        /* Red accent line */
+        .accent-line {
+            width: 48px;
+            height: 3px;
+            background: #c63a2b;
+        }
+
+        /* Signature gradient from business card — white to red fade */
+        .card-gradient {
+            background: linear-gradient(180deg, #ffffff 0%, #fef2f0 60%, #f9ddd9 100%);
+        }
+
+        /* Entrance animations */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(32px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-24px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(32px);
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hero-animate {
+            animation: fadeUp 1s cubic-bezier(0.23, 1, 0.32, 1) both;
+        }
+        .hero-delay-1 { animation-delay: 0.1s; }
+        .hero-delay-2 { animation-delay: 0.25s; }
+        .hero-delay-3 { animation-delay: 0.4s; }
+        .hero-delay-4 { animation-delay: 0.55s; }
+
+        /* Decorative diagonal stripe */
+        .diagonal-accent {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(135deg, rgba(198,58,43,0.04), transparent);
+            transform: rotate(-12deg);
+            border-radius: 40px;
+            pointer-events: none;
+        }
+
+        /* Logo building shapes */
+        .logo-mark svg {
+            display: block;
+        }
+
+        /* Narrative accent border */
+        .narrative-block {
+            border-left: 2px solid #c63a2b;
+            padding-left: 1.5rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav id="main-nav" class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="flex items-center gap-3">
+                <div class="logo-mark">
+                    <svg width="36" height="32" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Left U shape -->
+                        <path d="M0 4h4v20c0 4.4 3.6 8 8 8V8H8V0H0v4z" fill="#1b2a5e"/>
+                        <path d="M4 4h4v20c0 2.2 1.8 4 4 4V4H4z" fill="#1b2a5e"/>
+                        <!-- Middle column -->
+                        <path d="M14 0h4v28h-4z" fill="#1b2a5e"/>
+                        <!-- Right angle with red accent -->
+                        <path d="M20 0h4v28h-4z" fill="#1b2a5e"/>
+                        <path d="M26 0h4v4H26z" fill="#1b2a5e"/>
+                        <path d="M30 0h6v28h-4V4h-2z" fill="#c63a2b"/>
+                        <path d="M26 24h10v4H26z" fill="#c63a2b"/>
+                    </svg>
+                </div>
+                <div class="hidden sm:block">
+                    <span class="text-[11px] font-bold uppercase tracking-[0.2em] text-rbi-navy">Robust Business</span>
+                    <span class="block text-[11px] font-bold uppercase tracking-[0.2em] text-rbi-red -mt-0.5">Investments</span>
+                </div>
+            </a>
+            <div class="hidden lg:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-slate-500">
+                <a href="#about" class="hover:text-rbi-navy transition">About</a>
+                <a href="#portfolio" class="hover:text-rbi-navy transition">Portfolio</a>
+                <a href="#advisory" class="hover:text-rbi-navy transition">Advisory</a>
+                <a href="/contact" class="bg-rbi-navy text-white px-6 py-2.5 rounded-lg flex items-center gap-2 hover:bg-rbi-navy-light transition shadow-sm">
+                    CONTACT <i class="fas fa-arrow-right text-[9px]"></i>
+                </a>
+            </div>
+            <button class="lg:hidden text-2xl text-rbi-navy" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-[60] hidden flex flex-col items-center justify-center space-y-8 text-2xl heading-font">
+        <button class="absolute top-10 right-10 text-3xl text-rbi-navy" onclick="toggleMenu()"><i class="fas fa-times"></i></button>
+        <a href="#about" onclick="toggleMenu()" class="text-rbi-navy">About</a>
+        <a href="#portfolio" onclick="toggleMenu()" class="text-rbi-navy">Portfolio</a>
+        <a href="#advisory" onclick="toggleMenu()" class="text-rbi-navy">Advisory</a>
+        <a href="/contact" onclick="toggleMenu()" class="text-rbi-red">Contact</a>
+    </div>
+
+    <!-- Hero -->
+    <header class="relative min-h-screen flex items-center hero-grid pt-20 overflow-hidden">
+        <div class="diagonal-accent -top-20 -right-40"></div>
+        <div class="diagonal-accent top-1/3 -left-60 opacity-50"></div>
+
+        <div class="max-w-7xl mx-auto px-6 z-10 grid lg:grid-cols-12 gap-16 items-center">
+            <div class="lg:col-span-7">
+                <div class="hero-animate hero-delay-1 inline-flex items-center space-x-3 px-5 py-2 rounded-full border border-rbi-navy/10 bg-rbi-navy/[0.03] text-rbi-navy text-[10px] font-bold uppercase tracking-[0.2em] mb-10">
+                    <span class="flex h-2 w-2 rounded-full bg-rbi-red"></span>
+                    <span>Strategic Holding Company &mdash; Houston, TX</span>
+                </div>
+                <h1 class="hero-animate hero-delay-2 text-5xl md:text-7xl lg:text-8xl font-normal mb-8 leading-[1.05] heading-font text-rbi-navy">
+                    Building Resilient <span class="gradient-text">Ventures.</span>
+                </h1>
+                <p class="hero-animate hero-delay-3 text-lg md:text-xl text-slate-500 mb-12 max-w-lg leading-relaxed font-light">
+                    Strategic investment and advisory for technology, cybersecurity, and digital innovation. We build the foundation for lasting growth.
+                </p>
+                <div class="hero-animate hero-delay-4 flex flex-col sm:flex-row gap-4">
+                    <a href="#portfolio" class="bg-rbi-navy text-white text-center py-4 px-10 rounded-lg font-bold text-sm tracking-wide hover:bg-rbi-navy-light transition-all shadow-lg shadow-rbi-navy/15">Our Portfolio</a>
+                    <a href="#advisory" class="border border-slate-200 text-rbi-navy text-center py-4 px-10 rounded-lg font-bold text-sm tracking-wide hover:border-rbi-navy/30 hover:bg-slate-50 transition">Advisory Services</a>
+                </div>
+            </div>
+
+            <div class="hidden lg:block lg:col-span-5 relative">
+                <div class="hero-animate hero-delay-3 relative">
+                    <!-- Decorative background elements -->
+                    <div class="absolute -top-8 -left-8 w-full h-full bg-rbi-navy/[0.03] rounded-[32px]"></div>
+                    <div class="absolute -bottom-4 -right-4 w-full h-full border border-rbi-red/10 rounded-[32px]"></div>
+
+                    <!-- Main card with business card gradient -->
+                    <div class="relative card-gradient border border-slate-100 p-10 rounded-[32px] shadow-xl shadow-slate-200/50 overflow-hidden">
+                        <div class="relative z-10">
+                            <!-- Logo large -->
+                            <div class="mb-8">
+                                <svg width="72" height="64" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 4h4v20c0 4.4 3.6 8 8 8V8H8V0H0v4z" fill="#1b2a5e"/>
+                                    <path d="M4 4h4v20c0 2.2 1.8 4 4 4V4H4z" fill="#1b2a5e"/>
+                                    <path d="M14 0h4v28h-4z" fill="#1b2a5e"/>
+                                    <path d="M20 0h4v28h-4z" fill="#1b2a5e"/>
+                                    <path d="M26 0h4v4H26z" fill="#1b2a5e"/>
+                                    <path d="M30 0h6v28h-4V4h-2z" fill="#c63a2b"/>
+                                    <path d="M26 24h10v4H26z" fill="#c63a2b"/>
+                                </svg>
+                            </div>
+                            <h4 class="text-2xl mb-2 heading-font text-rbi-navy">"We build what lasts."</h4>
+                            <p class="text-sm text-slate-500 leading-relaxed mb-8">Strategic holding and advisory across technology, security, and digital innovation.</p>
+                            <hr class="border-rbi-navy/10 mb-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-11 h-11 bg-rbi-navy rounded-full flex items-center justify-center text-white font-bold text-xs tracking-widest">RBI</div>
+                                <div>
+                                    <p class="text-xs font-bold uppercase tracking-[0.15em] text-rbi-navy">Robust Business Investments</p>
+                                    <p class="text-[10px] text-slate-400 uppercase tracking-widest">Houston, TX</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom gradient line -->
+        <div class="absolute bottom-0 left-0 right-0 h-px gradient-bar opacity-20"></div>
+    </header>
+
+    <!-- About / Mission -->
+    <section id="about" class="bg-[#f8f9fc]">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-20 animate-on-scroll">
+                <div class="accent-line mx-auto mb-8"></div>
+                <h2 class="text-4xl md:text-5xl heading-font text-rbi-navy mb-6">Our Mission</h2>
+                <p class="text-lg text-slate-500 font-light leading-relaxed max-w-2xl mx-auto">
+                    Robust Business Investments identifies, nurtures, and scales ventures that sit at the intersection of technology, security, and human potential.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-16 items-start">
+                <div class="narrative-block animate-on-scroll">
+                    <h3 class="text-lg font-bold mb-4 text-rbi-navy uppercase tracking-wide text-sm">Strategic Foundation</h3>
+                    <p class="text-slate-500 leading-relaxed text-[15px]">
+                        We believe that resilient businesses are built on resilient infrastructure. Every venture in our portfolio benefits from deep expertise in cybersecurity, cloud architecture, and operational efficiency &mdash; ensuring growth is supported by a foundation that scales.
+                    </p>
+                </div>
+                <div class="narrative-block animate-on-scroll">
+                    <h3 class="text-lg font-bold mb-4 text-rbi-navy uppercase tracking-wide text-sm">Long-Term Vision</h3>
+                    <p class="text-slate-500 leading-relaxed text-[15px]">
+                        We are not interested in quick exits. RBI invests in people, ideas, and technology with the patience and conviction required to build something that endures. Our portfolio reflects a commitment to ventures that create lasting value.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio / Brands -->
+    <section id="portfolio" class="bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20 animate-on-scroll">
+                <div class="accent-line mx-auto mb-8"></div>
+                <h2 class="text-4xl md:text-5xl heading-font text-rbi-navy mb-6">Our Portfolio</h2>
+                <p class="text-lg text-slate-500 font-light leading-relaxed max-w-2xl mx-auto">
+                    A growing ecosystem of ventures in technology consulting, cybersecurity, and digital innovation.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+                <!-- RB Technical Solutions -->
+                <a href="https://rbtechs.us" target="_blank" class="brand-card group block bg-white border border-slate-100 rounded-[24px] p-10 shadow-sm animate-on-scroll">
+                    <div class="flex items-start justify-between mb-8">
+                        <div class="w-14 h-14 rounded-2xl flex items-center justify-center border" style="background: rgba(232,98,26,0.06); border-color: rgba(232,98,26,0.12);">
+                            <i class="fas fa-microchip text-xl" style="color: #e8621a;"></i>
+                        </div>
+                        <i class="fas fa-arrow-up-right-from-square text-xs text-slate-300 group-hover:text-rbi-navy transition"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-rbi-navy heading-font">RB Technical Solutions</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed mb-6">
+                        Experienced, personalized IT consulting. Network security, managed services, and custom solutions for businesses in Houston, TX.
+                    </p>
+                    <div class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.15em]" style="color: #e8621a;">
+                        <span>rbtechs.us</span>
+                    </div>
+                </a>
+
+                <!-- raybedford.com -->
+                <a href="https://raybedford.com" target="_blank" class="brand-card group block bg-white border border-slate-100 rounded-[24px] p-10 shadow-sm animate-on-scroll">
+                    <div class="flex items-start justify-between mb-8">
+                        <div class="w-14 h-14 rounded-2xl flex items-center justify-center border" style="background: rgba(56,189,248,0.06); border-color: rgba(56,189,248,0.12);">
+                            <i class="fas fa-shield-halved text-xl" style="color: #38bdf8;"></i>
+                        </div>
+                        <i class="fas fa-arrow-up-right-from-square text-xs text-slate-300 group-hover:text-rbi-navy transition"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-rbi-navy heading-font">Ray Bedford</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed mb-6">
+                        Strategic cyber defense and infrastructure consulting. Zero-to-one architecture, M365 hardening, and SIEM/SOAR optimization.
+                    </p>
+                    <div class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.15em]" style="color: #38bdf8;">
+                        <span>raybedford.com</span>
+                    </div>
+                </a>
+
+                <!-- KinKonnect -->
+                <a href="https://kinkonnect.app" target="_blank" class="brand-card group block bg-white border border-slate-100 rounded-[24px] p-10 shadow-sm animate-on-scroll">
+                    <div class="flex items-start justify-between mb-8">
+                        <div class="w-14 h-14 rounded-2xl flex items-center justify-center border" style="background: rgba(168,85,247,0.06); border-color: rgba(168,85,247,0.12);">
+                            <i class="fas fa-palette text-xl" style="color: #a855f7;"></i>
+                        </div>
+                        <i class="fas fa-arrow-up-right-from-square text-xs text-slate-300 group-hover:text-rbi-navy transition"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-rbi-navy heading-font">KinKonnect</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed mb-6">
+                        Artist social platform for creators to share, discover, and sell digital work. Featuring a marketplace, studio tools, and live events.
+                    </p>
+                    <div class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.15em]" style="color: #a855f7;">
+                        <span>kinkonnect.app</span>
+                    </div>
+                </a>
+
+                <!-- CampusConnect -->
+                <a href="https://campusconnect.raybedford.net" target="_blank" class="brand-card group block bg-white border border-slate-100 rounded-[24px] p-10 shadow-sm animate-on-scroll">
+                    <div class="flex items-start justify-between mb-8">
+                        <div class="w-14 h-14 rounded-2xl flex items-center justify-center border" style="background: rgba(16,185,129,0.06); border-color: rgba(16,185,129,0.12);">
+                            <i class="fas fa-comments text-xl" style="color: #10b981;"></i>
+                        </div>
+                        <i class="fas fa-arrow-up-right-from-square text-xs text-slate-300 group-hover:text-rbi-navy transition"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-rbi-navy heading-font">CampusConnect</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed mb-6">
+                        Secure academic real-time chat application. Purpose-built communication infrastructure for campus communities.
+                    </p>
+                    <div class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.15em]" style="color: #10b981;">
+                        <span>campusconnect.raybedford.net</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Advisory Services -->
+    <section id="advisory" class="bg-[#f8f9fc]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20 animate-on-scroll">
+                <div class="accent-line mx-auto mb-8"></div>
+                <h2 class="text-4xl md:text-5xl heading-font text-rbi-navy mb-6">Advisory Services</h2>
+                <p class="text-lg text-slate-500 font-light leading-relaxed max-w-2xl mx-auto">
+                    Leveraging decades of operational experience to guide businesses through growth, acquisition, and digital transformation.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+
+                <div class="service-card bg-white border border-slate-100 rounded-[24px] p-10 text-center shadow-sm animate-on-scroll">
+                    <div class="w-14 h-14 bg-rbi-navy/[0.05] border border-rbi-navy/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-briefcase text-xl text-rbi-navy"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3 text-rbi-navy heading-font">Tech Acquisitions</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed mb-8">
+                        Due diligence, technical assessment, and integration strategy for technology acquisitions and mergers.
+                    </p>
+                    <a href="/contact" class="text-rbi-red font-bold uppercase text-[10px] tracking-[0.15em] border-b border-rbi-red/30 pb-1 hover:border-rbi-red transition">Learn More</a>
+                </div>
+
+                <div class="service-card bg-white border border-slate-100 rounded-[24px] p-10 text-center shadow-sm animate-on-scroll">
+                    <div class="w-14 h-14 bg-rbi-navy/[0.05] border border-rbi-navy/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-server text-xl text-rbi-navy"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3 text-rbi-navy heading-font">Infrastructure Scaling</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed mb-8">
+                        Architecture consulting for businesses ready to scale. Cloud migration, security hardening, and operational resilience.
+                    </p>
+                    <a href="/contact" class="text-rbi-red font-bold uppercase text-[10px] tracking-[0.15em] border-b border-rbi-red/30 pb-1 hover:border-rbi-red transition">Learn More</a>
+                </div>
+
+                <div class="service-card bg-white border border-slate-100 rounded-[24px] p-10 text-center shadow-sm animate-on-scroll">
+                    <div class="w-14 h-14 bg-rbi-navy/[0.05] border border-rbi-navy/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-chart-line text-xl text-rbi-navy"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3 text-rbi-navy heading-font">Strategic Advisory</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed mb-8">
+                        Fractional leadership and strategic counsel for startups and growth-stage companies navigating complex technical decisions.
+                    </p>
+                    <a href="/contact" class="text-rbi-red font-bold uppercase text-[10px] tracking-[0.15em] border-b border-rbi-red/30 pb-1 hover:border-rbi-red transition">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-rbi-navy relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-rbi-red/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-72 h-72 bg-white/5 rounded-full blur-[80px] pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10 animate-on-scroll">
+            <h2 class="text-4xl md:text-5xl heading-font text-white mb-6">
+                Ready to Build Something <span class="text-rbi-red-light">Resilient?</span>
+            </h2>
+            <p class="text-lg text-white/60 mb-12 max-w-xl mx-auto font-light leading-relaxed">
+                Whether you're seeking strategic advisory, exploring partnership, or scaling your infrastructure &mdash; we'd like to hear from you.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/contact" class="bg-white text-rbi-navy text-center py-4 px-10 rounded-lg font-bold text-sm tracking-wide hover:bg-slate-50 transition-all shadow-lg">Get in Touch</a>
+                <a href="tel:9174268207" class="border border-white/20 text-white text-center py-4 px-10 rounded-lg font-bold text-sm tracking-wide hover:bg-white/5 transition flex items-center justify-center gap-3">
+                    <i class="fas fa-phone text-xs"></i> 917.426.8207
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-rbi-navy-dark py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-16">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center gap-3 mb-3">
+                        <svg width="28" height="24" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 4h4v20c0 4.4 3.6 8 8 8V8H8V0H0v4z" fill="rgba(255,255,255,0.9)"/>
+                            <path d="M4 4h4v20c0 2.2 1.8 4 4 4V4H4z" fill="rgba(255,255,255,0.9)"/>
+                            <path d="M14 0h4v28h-4z" fill="rgba(255,255,255,0.9)"/>
+                            <path d="M20 0h4v28h-4z" fill="rgba(255,255,255,0.9)"/>
+                            <path d="M26 0h4v4H26z" fill="rgba(255,255,255,0.9)"/>
+                            <path d="M30 0h6v28h-4V4h-2z" fill="#c63a2b"/>
+                            <path d="M26 24h10v4H26z" fill="#c63a2b"/>
+                        </svg>
+                        <span class="text-[11px] font-bold uppercase tracking-[0.15em] text-white/80">Robust Business Investments</span>
+                    </div>
+                    <p class="text-xs text-white/30 uppercase tracking-widest">Houston, TX &bull; 917.426.8207 &bull; ray@rbinvestments.us</p>
+                </div>
+
+                <div class="flex space-x-8 text-[11px] font-bold uppercase tracking-[0.15em] text-white/40">
+                    <a href="#about" class="hover:text-white transition">About</a>
+                    <a href="#portfolio" class="hover:text-white transition">Portfolio</a>
+                    <a href="#advisory" class="hover:text-white transition">Advisory</a>
+                    <a href="https://linkedin.com/in/raybedford" target="_blank" class="hover:text-white transition"><i class="fab fa-linkedin text-base"></i></a>
+                </div>
+            </div>
+
+            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-[10px] text-white/20 tracking-[0.3em] uppercase">
+                    &copy; 2026 Robust Business Investments. All rights reserved.
+                </p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="https://rbtechs.us" target="_blank" class="text-[10px] text-white/20 hover:text-white/40 transition tracking-widest uppercase">RB Techs</a>
+                    <a href="https://raybedford.com" target="_blank" class="text-[10px] text-white/20 hover:text-white/40 transition tracking-widest uppercase">Ray Bedford</a>
+                    <a href="https://kinkonnect.app" target="_blank" class="text-[10px] text-white/20 hover:text-white/40 transition tracking-widest uppercase">KinKonnect</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                setTimeout(() => menu.classList.remove('opacity-0', 'pointer-events-none'), 10);
+            } else {
+                menu.classList.add('opacity-0', 'pointer-events-none');
+                setTimeout(() => menu.classList.add('hidden'), 300);
+            }
+        }
+
+        // Nav shadow on scroll
+        const nav = document.getElementById('main-nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 20);
+        });
+
+        // Scroll-triggered animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
