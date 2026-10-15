@@ -3,23 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robust Business Investments | Strategic Holding & Advisory</title>
-    <meta name="description" content="Robust Business Investments — A strategic holding company building resilient ventures in technology, cybersecurity, and digital innovation.">
+    <title>Robust Business Investments | Strategic Technology Holding &amp; Venture Advisory</title>
+    <meta name="description" content="Robust Business Investments (RBI) is a strategic holding and advisory company founded by Ray Bedford. Operating at the intersection of enterprise infrastructure, cybersecurity, and digital innovation.">
+    <meta name="keywords" content="Robust Business Investments, RBI, Ray Bedford, technology holding company, venture advisory, M&amp;A technical due diligence, cybersecurity investments, RB Technical Solutions, Houston venture holding, enterprise infrastructure">
     <meta name="author" content="Robust Business Investments">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Robust Business Investments | Strategic Holding & Advisory">
-    <meta property="og:description" content="Building resilient ventures in technology, cybersecurity, and digital innovation. Parent company of RB Technical Solutions, KinKonnect, and more.">
+    <meta property="og:title" content="Robust Business Investments | Strategic Technology Holding &amp; Venture Advisory">
+    <meta property="og:description" content="Operating at the intersection of enterprise infrastructure, cybersecurity, and digital innovation. Parent company of RB Technical Solutions, Black Artist Vault, and CampusConnect.">
     <meta property="og:url" content="https://rbinvestments.us">
     <meta property="og:site_name" content="Robust Business Investments">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Robust Business Investments | Strategic Holding & Advisory">
-    <meta name="twitter:description" content="Building resilient ventures in technology, cybersecurity, and digital innovation.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Robust Business Investments | Strategic Technology Holding &amp; Advisory">
+    <meta name="twitter:description" content="Operating at the intersection of enterprise infrastructure, cybersecurity, and digital innovation.">
 
     <link rel="canonical" href="https://rbinvestments.us">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://rbinvestments.us/#organization",
+          "name": "Robust Business Investments",
+          "url": "https://rbinvestments.us",
+          "telephone": "+1-713-931-8047",
+          "email": "ray@rbinvestments.us",
+          "description": "Strategic holding company and advisory framework operating across technology consulting, enterprise cybersecurity, and digital innovation ventures.",
+          "founder": {
+            "@type": "Person",
+            "name": "Ray Bedford",
+            "url": "https://raybedford.com"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Houston",
+            "addressRegion": "TX",
+            "addressCountry": "US"
+          },
+          "sameAs": [
+            "https://raybedford.com",
+            "https://rbtechs.us",
+            "https://linkedin.com/in/raybedford"
+          ],
+          "subOrganization": [
+            {
+              "@type": "Organization",
+              "name": "RB Technical Solutions",
+              "url": "https://rbtechs.us"
+            },
+            {
+              "@type": "Organization",
+              "name": "Black Artist Vault",
+              "url": "https://blackartistsvault.com"
+            },
+            {
+              "@type": "Organization",
+              "name": "CampusConnect",
+              "url": "https://campusconnect.raybedford.net"
+            }
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Strategic Advisory Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "M&A Technical & Cyber Due Diligence"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Enterprise Infrastructure Scaling"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Strategic Technology Advisory"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -67,7 +148,7 @@
             box-shadow: 0 1px 24px rgba(27, 42, 94, 0.06);
         }
 
-        /* Gradient accent inspired by business card */
+        /* Gradient accent */
         .gradient-text {
             background: linear-gradient(135deg, #c63a2b, #d94f40);
             -webkit-background-clip: text;
@@ -114,7 +195,7 @@
             background: #c63a2b;
         }
 
-        /* Signature gradient from business card — white to red fade */
+        /* Signature gradient */
         .card-gradient {
             background: linear-gradient(180deg, #ffffff 0%, #fef2f0 60%, #f9ddd9 100%);
         }
@@ -123,14 +204,6 @@
         @keyframes fadeUp {
             from { opacity: 0; transform: translateY(32px); }
             to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes slideInLeft {
-            from { opacity: 0; transform: translateX(-24px); }
-            to { opacity: 1; transform: translateX(0); }
         }
 
         .animate-on-scroll {
@@ -162,11 +235,6 @@
             pointer-events: none;
         }
 
-        /* Logo building shapes */
-        .logo-mark svg {
-            display: block;
-        }
-
         /* Narrative accent border */
         .narrative-block {
             border-left: 2px solid #c63a2b;
@@ -182,12 +250,9 @@
             <a href="/" class="flex items-center gap-3">
                 <div class="logo-mark">
                     <svg width="36" height="32" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Left U shape -->
                         <path d="M0 4h4v20c0 4.4 3.6 8 8 8V8H8V0H0v4z" fill="#1b2a5e"/>
                         <path d="M4 4h4v20c0 2.2 1.8 4 4 4V4H4z" fill="#1b2a5e"/>
-                        <!-- Middle column -->
                         <path d="M14 0h4v28h-4z" fill="#1b2a5e"/>
-                        <!-- Right angle with red accent -->
                         <path d="M20 0h4v28h-4z" fill="#1b2a5e"/>
                         <path d="M26 0h4v4H26z" fill="#1b2a5e"/>
                         <path d="M30 0h6v28h-4V4h-2z" fill="#c63a2b"/>
@@ -203,11 +268,11 @@
                 <a href="#about" class="hover:text-rbi-navy transition">About</a>
                 <a href="#portfolio" class="hover:text-rbi-navy transition">Portfolio</a>
                 <a href="#advisory" class="hover:text-rbi-navy transition">Advisory</a>
-                <a href="/contact" class="bg-rbi-navy text-white px-6 py-2.5 rounded-lg flex items-center gap-2 hover:bg-rbi-navy-light transition shadow-sm">
+                <a href="/contact" class="bg-rbi-navy text-white px-6 py-2.5 rounded-lg flex items-center gap-2 hover:bg-rbi-navy-light transition shadow-sm font-bold">
                     CONTACT <i class="fas fa-arrow-right text-[9px]"></i>
                 </a>
             </div>
-            <button class="lg:hidden text-2xl text-rbi-navy" onclick="toggleMenu()">
+            <button class="lg:hidden text-2xl text-rbi-navy" onclick="toggleMenu()" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
@@ -215,7 +280,7 @@
 
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="fixed inset-0 bg-white z-[60] hidden flex flex-col items-center justify-center space-y-8 text-2xl heading-font">
-        <button class="absolute top-10 right-10 text-3xl text-rbi-navy" onclick="toggleMenu()"><i class="fas fa-times"></i></button>
+        <button class="absolute top-10 right-10 text-3xl text-rbi-navy" onclick="toggleMenu()" aria-label="Close menu"><i class="fas fa-times"></i></button>
         <a href="#about" onclick="toggleMenu()" class="text-rbi-navy">About</a>
         <a href="#portfolio" onclick="toggleMenu()" class="text-rbi-navy">Portfolio</a>
         <a href="#advisory" onclick="toggleMenu()" class="text-rbi-navy">Advisory</a>
@@ -231,13 +296,13 @@
             <div class="lg:col-span-7">
                 <div class="hero-animate hero-delay-1 inline-flex items-center space-x-3 px-5 py-2 rounded-full border border-rbi-navy/10 bg-rbi-navy/[0.03] text-rbi-navy text-[10px] font-bold uppercase tracking-[0.2em] mb-10">
                     <span class="flex h-2 w-2 rounded-full bg-rbi-red"></span>
-                    <span>Strategic Holding Company &mdash; Houston, TX</span>
+                    <span>Strategic Holding Company &bull; Houston, TX</span>
                 </div>
                 <h1 class="hero-animate hero-delay-2 text-5xl md:text-7xl lg:text-8xl font-normal mb-8 leading-[1.05] heading-font text-rbi-navy">
                     Building Resilient <span class="gradient-text">Ventures.</span>
                 </h1>
                 <p class="hero-animate hero-delay-3 text-lg md:text-xl text-slate-500 mb-12 max-w-lg leading-relaxed font-light">
-                    Strategic investment and advisory for technology, cybersecurity, and digital innovation. We build the foundation for lasting growth.
+                    Strategic investment and operational advisory across enterprise technology, cybersecurity, and digital platforms. We build the architecture for lasting valuation.
                 </p>
                 <div class="hero-animate hero-delay-4 flex flex-col sm:flex-row gap-4">
                     <a href="#portfolio" class="bg-rbi-navy text-white text-center py-4 px-10 rounded-lg font-bold text-sm tracking-wide hover:bg-rbi-navy-light transition-all shadow-lg shadow-rbi-navy/15">Our Portfolio</a>
@@ -267,13 +332,13 @@
                                 </svg>
                             </div>
                             <h4 class="text-2xl mb-2 heading-font text-rbi-navy">"We build what lasts."</h4>
-                            <p class="text-sm text-slate-500 leading-relaxed mb-8">Strategic holding and advisory across technology, security, and digital innovation.</p>
+                            <p class="text-sm text-slate-500 leading-relaxed mb-8">Strategic holding and advisory across enterprise technology, security governance, and digital innovation.</p>
                             <hr class="border-rbi-navy/10 mb-6">
                             <div class="flex items-center space-x-4">
                                 <div class="w-11 h-11 bg-rbi-navy rounded-full flex items-center justify-center text-white font-bold text-xs tracking-widest">RBI</div>
                                 <div>
                                     <p class="text-xs font-bold uppercase tracking-[0.15em] text-rbi-navy">Robust Business Investments</p>
-                                    <p class="text-[10px] text-slate-400 uppercase tracking-widest">Houston, TX</p>
+                                    <p class="text-[10px] text-slate-400 uppercase tracking-widest">Houston, TX &bull; Founded by Ray Bedford</p>
                                 </div>
                             </div>
                         </div>
@@ -293,7 +358,7 @@
                 <div class="accent-line mx-auto mb-8"></div>
                 <h2 class="text-4xl md:text-5xl heading-font text-rbi-navy mb-6">Our Mission</h2>
                 <p class="text-lg text-slate-500 font-light leading-relaxed max-w-2xl mx-auto">
-                    Robust Business Investments identifies, nurtures, and scales ventures that sit at the intersection of technology, security, and human potential.
+                    Robust Business Investments identifies, operates, and scales ventures that sit at the intersection of technology infrastructure, cyber defense, and digital innovation.
                 </p>
             </div>
 
@@ -301,13 +366,13 @@
                 <div class="narrative-block animate-on-scroll">
                     <h3 class="text-lg font-bold mb-4 text-rbi-navy uppercase tracking-wide text-sm">Strategic Foundation</h3>
                     <p class="text-slate-500 leading-relaxed text-[15px]">
-                        We believe that resilient businesses are built on resilient infrastructure. Every venture in our portfolio benefits from deep expertise in cybersecurity, cloud architecture, and operational efficiency &mdash; ensuring growth is supported by a foundation that scales.
+                        We believe that resilient businesses are built on resilient infrastructure. Every venture in our portfolio benefits from two decades of deep operational expertise in cybersecurity, cloud architecture, and cost optimization &mdash; ensuring growth is supported by a foundation that scales.
                     </p>
                 </div>
                 <div class="narrative-block animate-on-scroll">
-                    <h3 class="text-lg font-bold mb-4 text-rbi-navy uppercase tracking-wide text-sm">Long-Term Vision</h3>
+                    <h3 class="text-lg font-bold mb-4 text-rbi-navy uppercase tracking-wide text-sm">Operator Conviction</h3>
                     <p class="text-slate-500 leading-relaxed text-[15px]">
-                        We are not interested in quick exits. RBI invests in people, ideas, and technology with the patience and conviction required to build something that endures. Our portfolio reflects a commitment to ventures that create lasting value.
+                        We are operators, not passive spectators. RBI invests with active technical ownership, providing leadership teams with the architectural clarity and executive guidance necessary to pass audits, survive crises, and protect enterprise valuation.
                     </p>
                 </div>
             </div>
@@ -321,7 +386,7 @@
                 <div class="accent-line mx-auto mb-8"></div>
                 <h2 class="text-4xl md:text-5xl heading-font text-rbi-navy mb-6">Our Portfolio</h2>
                 <p class="text-lg text-slate-500 font-light leading-relaxed max-w-2xl mx-auto">
-                    A growing ecosystem of ventures in technology consulting, cybersecurity, and digital innovation.
+                    A cohesive ecosystem of ventures spanning executive technology advisory, managed defense, and secure digital platforms.
                 </p>
             </div>
 
@@ -330,51 +395,56 @@
                 <!-- RB Technical Solutions -->
                 <a href="https://rbtechs.us" target="_blank" class="brand-card group block bg-white border border-slate-100 rounded-[24px] p-10 shadow-sm animate-on-scroll">
                     <div class="flex items-start justify-between mb-8">
-                        <div class="w-14 h-14 rounded-2xl flex items-center justify-center border" style="background: rgba(232,98,26,0.06); border-color: rgba(232,98,26,0.12);">
-                            <i class="fas fa-microchip text-xl" style="color: #e8621a;"></i>
+                        <div class="w-14 h-14 rounded-2xl flex items-center justify-center border" style="background: rgba(14,116,144,0.06); border-color: rgba(14,116,144,0.15);">
+                            <i class="fas fa-microchip text-xl" style="color: #0e7490;"></i>
                         </div>
                         <i class="fas fa-arrow-up-right-from-square text-xs text-slate-300 group-hover:text-rbi-navy transition"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-rbi-navy heading-font">RB Technical Solutions</h3>
                     <p class="text-sm text-slate-500 leading-relaxed mb-6">
-                        Experienced, personalized IT consulting. Network security, managed services, and custom solutions for businesses in Houston, TX.
+                        Senior IT engineering &amp; managed cyber defense firm in Houston, TX. Co-managed infrastructure, EDR threat detection, zero-trust perimeters, and zero help-desk fluff.
                     </p>
-                    <div class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.15em]" style="color: #e8621a;">
-                        <span>rbtechs.us</span>
+                    <div class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.15em]" style="color: #0e7490;">
+                        <span>rbtechs.us &bull; Established 2004</span>
                     </div>
                 </a>
 
-                <!-- raybedford.com -->
+                <!-- Ray Bedford -->
                 <a href="https://raybedford.com" target="_blank" class="brand-card group block bg-white border border-slate-100 rounded-[24px] p-10 shadow-sm animate-on-scroll">
                     <div class="flex items-start justify-between mb-8">
-                        <div class="w-14 h-14 rounded-2xl flex items-center justify-center border" style="background: rgba(56,189,248,0.06); border-color: rgba(56,189,248,0.12);">
-                            <i class="fas fa-shield-halved text-xl" style="color: #38bdf8;"></i>
+                        <div class="w-14 h-14 rounded-2xl flex items-center justify-center border" style="background: rgba(212,168,83,0.08); border-color: rgba(212,168,83,0.2);">
+                            <i class="fas fa-shield-halved text-xl" style="color: #d4a853;"></i>
                         </div>
                         <i class="fas fa-arrow-up-right-from-square text-xs text-slate-300 group-hover:text-rbi-navy transition"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-rbi-navy heading-font">Ray Bedford</h3>
+                    <h3 class="text-xl font-bold mb-3 text-rbi-navy heading-font">Ray Bedford Executive Advisory</h3>
                     <p class="text-sm text-slate-500 leading-relaxed mb-6">
-                        Strategic cyber defense and infrastructure consulting. Zero-to-one architecture, M365 hardening, and SIEM/SOAR optimization.
+                        On-demand Fractional CISO &amp; CIO advisory for growth-stage companies and private equity. Cyber risk governance, SOC 2 audit readiness, and strategic IT roadmaps.
                     </p>
-                    <div class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.15em]" style="color: #38bdf8;">
-                        <span>raybedford.com</span>
+                    <div class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.15em]" style="color: #d4a853;">
+                        <span>raybedford.com &bull; vCISO &amp; vCIO</span>
                     </div>
                 </a>
 
-                <!-- KinKonnect -->
-                <a href="https://kinkonnect.app" target="_blank" class="brand-card group block bg-white border border-slate-100 rounded-[24px] p-10 shadow-sm animate-on-scroll">
+                <!-- Black Artist Vault -->
+                <a href="https://blackartistsvault.com" target="_blank" class="brand-card group block bg-white border border-slate-100 rounded-[24px] p-10 shadow-sm animate-on-scroll">
                     <div class="flex items-start justify-between mb-8">
-                        <div class="w-14 h-14 rounded-2xl flex items-center justify-center border" style="background: rgba(168,85,247,0.06); border-color: rgba(168,85,247,0.12);">
-                            <i class="fas fa-palette text-xl" style="color: #a855f7;"></i>
+                        <div class="w-14 h-14 rounded-2xl flex items-center justify-center border" style="background: rgba(212,175,55,0.06); border-color: rgba(212,175,55,0.2);">
+                            <i class="fas fa-palette text-xl" style="color: #d4af37;"></i>
                         </div>
                         <i class="fas fa-arrow-up-right-from-square text-xs text-slate-300 group-hover:text-rbi-navy transition"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-rbi-navy heading-font">KinKonnect</h3>
+                    <div class="flex items-center gap-2 mb-3">
+                        <h3 class="text-xl font-bold text-rbi-navy heading-font">Black Artist Vault</h3>
+                        <span class="px-2 py-0.5 rounded bg-amber-50 text-amber-700 border border-amber-200 text-[9px] font-mono uppercase font-bold tracking-wider">
+                            Android &amp; Web
+                        </span>
+                    </div>
                     <p class="text-sm text-slate-500 leading-relaxed mb-6">
-                        Artist social platform for creators to share, discover, and sell digital work. Featuring a marketplace, studio tools, and live events.
+                        Premier digital art marketplace and custom studio network. Engineered with Passkey MFA, Square Escrow buyer protection, digital COAs, and native Android release.
                     </p>
-                    <div class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.15em]" style="color: #a855f7;">
-                        <span>kinkonnect.app</span>
+                    <div class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.15em]" style="color: #d4af37;">
+                        <span>blackartistsvault.com</span>
                     </div>
                 </a>
 
@@ -388,7 +458,7 @@
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-rbi-navy heading-font">CampusConnect</h3>
                     <p class="text-sm text-slate-500 leading-relaxed mb-6">
-                        Secure academic real-time chat application. Purpose-built communication infrastructure for campus communities.
+                        Secure academic real-time chat application. Purpose-built communication infrastructure for high-privacy campus environments.
                     </p>
                     <div class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.15em]" style="color: #10b981;">
                         <span>campusconnect.raybedford.net</span>
@@ -404,9 +474,9 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-20 animate-on-scroll">
                 <div class="accent-line mx-auto mb-8"></div>
-                <h2 class="text-4xl md:text-5xl heading-font text-rbi-navy mb-6">Advisory Services</h2>
+                <h2 class="text-4xl md:text-5xl heading-font text-rbi-navy mb-6">Advisory Practice Areas</h2>
                 <p class="text-lg text-slate-500 font-light leading-relaxed max-w-2xl mx-auto">
-                    Leveraging decades of operational experience to guide businesses through growth, acquisition, and digital transformation.
+                    Leveraging two decades of operational experience to guide business owners, private equity investors, and executive boards.
                 </p>
             </div>
 
@@ -416,33 +486,33 @@
                     <div class="w-14 h-14 bg-rbi-navy/[0.05] border border-rbi-navy/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
                         <i class="fas fa-briefcase text-xl text-rbi-navy"></i>
                     </div>
-                    <h3 class="text-lg font-bold mb-3 text-rbi-navy heading-font">Tech Acquisitions</h3>
+                    <h3 class="text-lg font-bold mb-3 text-rbi-navy heading-font">M&amp;A Technical Due Diligence</h3>
                     <p class="text-sm text-slate-500 leading-relaxed mb-8">
-                        Due diligence, technical assessment, and integration strategy for technology acquisitions and mergers.
+                        Pre-acquisition cyber risk assessments, technical debt quantification, and post-merger systems integration roadmaps for private equity and acquirers.
                     </p>
-                    <a href="/contact" class="text-rbi-red font-bold uppercase text-[10px] tracking-[0.15em] border-b border-rbi-red/30 pb-1 hover:border-rbi-red transition">Learn More</a>
+                    <a href="/contact" class="text-rbi-red font-bold uppercase text-[10px] tracking-[0.15em] border-b border-rbi-red/30 pb-1 hover:border-rbi-red transition">Inquire for Diligence</a>
                 </div>
 
                 <div class="service-card bg-white border border-slate-100 rounded-[24px] p-10 text-center shadow-sm animate-on-scroll">
                     <div class="w-14 h-14 bg-rbi-navy/[0.05] border border-rbi-navy/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
                         <i class="fas fa-server text-xl text-rbi-navy"></i>
                     </div>
-                    <h3 class="text-lg font-bold mb-3 text-rbi-navy heading-font">Infrastructure Scaling</h3>
+                    <h3 class="text-lg font-bold mb-3 text-rbi-navy heading-font">Infrastructure &amp; Cloud Modernization</h3>
                     <p class="text-sm text-slate-500 leading-relaxed mb-8">
-                        Architecture consulting for businesses ready to scale. Cloud migration, security hardening, and operational resilience.
+                        Zero-to-scale systems architecture, hybrid cloud migration, zero-trust security perimeters, and tested disaster recovery continuity.
                     </p>
-                    <a href="/contact" class="text-rbi-red font-bold uppercase text-[10px] tracking-[0.15em] border-b border-rbi-red/30 pb-1 hover:border-rbi-red transition">Learn More</a>
+                    <a href="/contact" class="text-rbi-red font-bold uppercase text-[10px] tracking-[0.15em] border-b border-rbi-red/30 pb-1 hover:border-rbi-red transition">Explore Modernization</a>
                 </div>
 
                 <div class="service-card bg-white border border-slate-100 rounded-[24px] p-10 text-center shadow-sm animate-on-scroll">
                     <div class="w-14 h-14 bg-rbi-navy/[0.05] border border-rbi-navy/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
                         <i class="fas fa-chart-line text-xl text-rbi-navy"></i>
                     </div>
-                    <h3 class="text-lg font-bold mb-3 text-rbi-navy heading-font">Strategic Advisory</h3>
+                    <h3 class="text-lg font-bold mb-3 text-rbi-navy heading-font">Executive &amp; Board Cyber Advisory</h3>
                     <p class="text-sm text-slate-500 leading-relaxed mb-8">
-                        Fractional leadership and strategic counsel for startups and growth-stage companies navigating complex technical decisions.
+                        Fractional C-suite counsel (vCISO/vCIO), SOC 2 compliance readiness, cyber insurance qualification, and IT budget/vendor governance.
                     </p>
-                    <a href="/contact" class="text-rbi-red font-bold uppercase text-[10px] tracking-[0.15em] border-b border-rbi-red/30 pb-1 hover:border-rbi-red transition">Learn More</a>
+                    <a href="/contact" class="text-rbi-red font-bold uppercase text-[10px] tracking-[0.15em] border-b border-rbi-red/30 pb-1 hover:border-rbi-red transition">Inquire for Advisory</a>
                 </div>
 
             </div>
@@ -459,12 +529,12 @@
                 Ready to Build Something <span class="text-rbi-red-light">Resilient?</span>
             </h2>
             <p class="text-lg text-white/60 mb-12 max-w-xl mx-auto font-light leading-relaxed">
-                Whether you're seeking strategic advisory, exploring partnership, or scaling your infrastructure &mdash; we'd like to hear from you.
+                Whether you are seeking strategic advisory, evaluating a technical acquisition, or scaling critical infrastructure &mdash; we welcome confidential discussion.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="/contact" class="bg-white text-rbi-navy text-center py-4 px-10 rounded-lg font-bold text-sm tracking-wide hover:bg-slate-50 transition-all shadow-lg">Get in Touch</a>
-                <a href="tel:9174268207" class="border border-white/20 text-white text-center py-4 px-10 rounded-lg font-bold text-sm tracking-wide hover:bg-white/5 transition flex items-center justify-center gap-3">
-                    <i class="fas fa-phone text-xs"></i> 917.426.8207
+                <a href="/contact" class="bg-white text-rbi-navy text-center py-4 px-10 rounded-lg font-bold text-sm tracking-wide hover:bg-slate-50 transition-all shadow-lg">Schedule a Consultation</a>
+                <a href="tel:7139318047" class="border border-white/20 text-white text-center py-4 px-10 rounded-lg font-bold text-sm tracking-wide hover:bg-white/5 transition flex items-center justify-center gap-3">
+                    <i class="fas fa-phone text-xs"></i> 713-931-8047
                 </a>
             </div>
         </div>
@@ -487,7 +557,7 @@
                         </svg>
                         <span class="text-[11px] font-bold uppercase tracking-[0.15em] text-white/80">Robust Business Investments</span>
                     </div>
-                    <p class="text-xs text-white/30 uppercase tracking-widest">Houston, TX &bull; 917.426.8207 &bull; ray@rbinvestments.us</p>
+                    <p class="text-xs text-white/30 uppercase tracking-widest">Houston, TX &bull; 713-931-8047 &bull; ray@rbinvestments.us</p>
                 </div>
 
                 <div class="flex space-x-8 text-[11px] font-bold uppercase tracking-[0.15em] text-white/40">
@@ -502,9 +572,9 @@
             <div class="border-t border-white/5 pt-8 mb-8">
                 <p class="text-[10px] text-white/30 uppercase tracking-[0.2em] mb-4">Ecosystem</p>
                 <div class="flex flex-wrap gap-6">
-                    <a href="https://raybedford.com" target="_blank" class="text-[10px] text-white/20 hover:text-white/40 transition tracking-widest uppercase">Ray Bedford</a>
-                    <a href="https://rbtechs.us" target="_blank" class="text-[10px] text-white/20 hover:text-white/40 transition tracking-widest uppercase">RB Techs</a>
-                    <a href="https://kinkonnect.app" target="_blank" class="text-[10px] text-white/20 hover:text-white/40 transition tracking-widest uppercase">KinKonnect</a>
+                    <a href="https://raybedford.com" target="_blank" class="text-[10px] text-white/20 hover:text-white/40 transition tracking-widest uppercase">Ray Bedford (vCISO / vCIO)</a>
+                    <a href="https://rbtechs.us" target="_blank" class="text-[10px] text-white/20 hover:text-white/40 transition tracking-widest uppercase">RB Technical Solutions</a>
+                    <a href="https://blackartistsvault.com" target="_blank" class="text-[10px] text-white/20 hover:text-white/40 transition tracking-widest uppercase">Black Artist Vault</a>
                     <a href="https://campusconnect.raybedford.net" target="_blank" class="text-[10px] text-white/20 hover:text-white/40 transition tracking-widest uppercase">CampusConnect</a>
                 </div>
             </div>
@@ -518,7 +588,6 @@
     </footer>
 
     <script>
-        // Mobile menu toggle
         function toggleMenu() {
             const menu = document.getElementById('mobile-menu');
             if (menu.classList.contains('hidden')) {
@@ -530,13 +599,11 @@
             }
         }
 
-        // Nav shadow on scroll
         const nav = document.getElementById('main-nav');
         window.addEventListener('scroll', () => {
             nav.classList.toggle('scrolled', window.scrollY > 20);
         });
 
-        // Scroll-triggered animations
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
